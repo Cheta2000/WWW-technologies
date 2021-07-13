@@ -1,0 +1,493 @@
+/* line 1, ../../sass/partials/_basicstyle.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 2, ../../sass/partials/_mixins.scss */
+.row::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* line 9, ../../sass/partials/_basicstyle.scss */
+html {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.5em;
+  background-color: #f1faf1;
+}
+
+/* line 15, ../../sass/partials/_basicstyle.scss */
+body {
+  margin: 0;
+  height: 100vh;
+}
+
+/* line 20, ../../sass/partials/_basicstyle.scss */
+h2 {
+  font-variant: small-caps;
+}
+
+/* line 24, ../../sass/partials/_basicstyle.scss */
+header {
+  font-size: 150%;
+  padding: 20px;
+  background-color: #90ac73;
+  text-align: center;
+}
+
+/* line 31, ../../sass/partials/_basicstyle.scss */
+footer {
+  background-color: #a3d1d2;
+  padding: 5px;
+}
+
+/* line 36, ../../sass/partials/_basicstyle.scss */
+li {
+  font-size: 1.5em;
+  font-variant: small-caps;
+}
+
+/* line 41, ../../sass/partials/_basicstyle.scss */
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* line 45, ../../sass/partials/_basicstyle.scss */
+#phone,
+.large {
+  display: none;
+}
+
+/* line 50, ../../sass/partials/_basicstyle.scss */
+.login {
+  margin-top: -50px;
+}
+/* line 52, ../../sass/partials/_basicstyle.scss */
+.login a {
+  color: black;
+}
+/* line 54, ../../sass/partials/_basicstyle.scss */
+.login a:hover {
+  color: white;
+}
+
+/* line 60, ../../sass/partials/_basicstyle.scss */
+#me, .comment {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 65, ../../sass/partials/_basicstyle.scss */
+#me {
+  width: 70vw;
+  height: 70vw;
+  display: block;
+}
+
+/* line 71, ../../sass/partials/_basicstyle.scss */
+article, aside, .visitors {
+  margin: 20px;
+  padding: 5px;
+  border: 2px solid black;
+}
+
+/* line 78, ../../sass/partials/_basicstyle.scss */
+.register {
+  margin: 20px;
+}
+
+/* line 82, ../../sass/partials/_basicstyle.scss */
+aside {
+  background-color: darkcyan;
+  color: white;
+}
+/* line 85, ../../sass/partials/_basicstyle.scss */
+aside a {
+  color: black;
+}
+
+/* line 91, ../../sass/partials/_basicstyle.scss */
+input:invalid {
+  border: 2px dashed red;
+}
+
+/* line 96, ../../sass/partials/_basicstyle.scss */
+.visitors {
+  background: sandybrown;
+}
+
+/* line 101, ../../sass/partials/_basicstyle.scss */
+.error {
+  color: red;
+}
+
+/* line 105, ../../sass/partials/_basicstyle.scss */
+td {
+  padding: 7px;
+}
+
+/* line 109, ../../sass/partials/_basicstyle.scss */
+.comment {
+  border-color: salmon;
+  background-color: skyblue;
+  width: 80vw;
+}
+
+/* line 116, ../../sass/partials/_basicstyle.scss */
+.button {
+  box-shadow: 3px 4px 0px 0px #1564ad;
+  background: linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
+  background-color: #79bbff;
+  border-radius: 5px;
+  border: 1px solid #337bc4;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 12px 44px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #528ecc;
+}
+/* line 131, ../../sass/partials/_basicstyle.scss */
+.button:hover {
+  background: linear-gradient(to bottom, #378de5 5%, #79bbff 100%);
+  background-color: #378de5;
+}
+/* line 135, ../../sass/partials/_basicstyle.scss */
+.button:active {
+  position: relative;
+  top: 1px;
+}
+
+/* line 141, ../../sass/partials/_basicstyle.scss */
+select {
+  width: 50vw;
+  font-size: large;
+}
+
+/* line 146, ../../sass/partials/_basicstyle.scss */
+textarea {
+  width: 50vw;
+  height: 15vw;
+}
+
+/* line 150, ../../sass/partials/_basicstyle.scss */
+h4 {
+  padding-left: 20px;
+  font-size: 2em;
+  text-align: center;
+}
+
+/* line 156, ../../sass/partials/_basicstyle.scss */
+#left,
+#right {
+  background-color: slateblue;
+  width: 300px;
+  height: 50px;
+  border-radius: 100px;
+  color: white;
+  font-size: 1em;
+}
+
+/* line 165, ../../sass/partials/_basicstyle.scss */
+.buttons {
+  padding: 20px;
+  text-align: center;
+}
+
+/* line 1, ../../sass/partials/_modulesNOJS.scss */
+nav {
+  background-color: black;
+}
+/* line 3, ../../sass/partials/_modulesNOJS.scss */
+nav a {
+  text-align: center;
+  display: block;
+  color: white;
+  padding: 14px;
+  text-decoration: none;
+}
+/* line 9, ../../sass/partials/_modulesNOJS.scss */
+nav a:hover {
+  background-color: #3e813e;
+  transform: scale(1.1);
+  margin-left: 20px;
+}
+/* line 15, ../../sass/partials/_modulesNOJS.scss */
+nav li {
+  font-size: 1.5em;
+  font-variant: small-caps;
+}
+/* line 19, ../../sass/partials/_modulesNOJS.scss */
+nav .active {
+  background-color: darkgreen;
+}
+/* line 22, ../../sass/partials/_modulesNOJS.scss */
+nav .hamburger {
+  display: none;
+}
+/* line 25, ../../sass/partials/_modulesNOJS.scss */
+nav #hidden {
+  display: block;
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1600px) {
+  /* line 3, ../../sass/partials/_media.scss */
+  .col-1s {
+    width: 8.33333%;
+    float: left;
+  }
+
+  /* line 3, ../../sass/partials/_media.scss */
+  .col-2s {
+    width: 16.66667%;
+    float: left;
+  }
+
+  /* line 3, ../../sass/partials/_media.scss */
+  .col-3s {
+    width: 25%;
+    float: left;
+  }
+
+  /* line 3, ../../sass/partials/_media.scss */
+  .col-4s {
+    width: 33.33333%;
+    float: left;
+  }
+
+  /* line 3, ../../sass/partials/_media.scss */
+  .col-5s {
+    width: 41.66667%;
+    float: left;
+  }
+
+  /* line 3, ../../sass/partials/_media.scss */
+  .col-6s {
+    width: 50%;
+    float: left;
+  }
+
+  /* line 3, ../../sass/partials/_media.scss */
+  .col-7s {
+    width: 58.33333%;
+    float: left;
+  }
+
+  /* line 3, ../../sass/partials/_media.scss */
+  .col-8s {
+    width: 66.66667%;
+    float: left;
+  }
+
+  /* line 3, ../../sass/partials/_media.scss */
+  .col-9s {
+    width: 75%;
+    float: left;
+  }
+
+  /* line 3, ../../sass/partials/_media.scss */
+  .col-10s {
+    width: 83.33333%;
+    float: left;
+  }
+
+  /* line 3, ../../sass/partials/_media.scss */
+  .col-11s {
+    width: 91.66667%;
+    float: left;
+  }
+
+  /* line 3, ../../sass/partials/_media.scss */
+  .col-12s {
+    width: 100%;
+    float: left;
+  }
+
+  /* line 8, ../../sass/partials/_media.scss */
+  #me {
+    padding-top: 20px;
+    width: 30vw;
+    height: auto;
+  }
+
+  /* line 12, ../../sass/partials/_media.scss */
+  nav {
+    margin: 20px;
+  }
+  /* line 14, ../../sass/partials/_media.scss */
+  nav .hamburger {
+    display: none;
+  }
+  /* line 17, ../../sass/partials/_media.scss */
+  nav #hidden {
+    display: block;
+  }
+  /* line 20, ../../sass/partials/_media.scss */
+  nav a {
+    text-align: left;
+    margin: 0px;
+    padding: 20px;
+  }
+
+  /* line 26, ../../sass/partials/_media.scss */
+  .login {
+    text-align: right;
+  }
+
+  /* line 29, ../../sass/partials/_media.scss */
+  .up {
+    margin-top: -220px;
+  }
+
+  /* line 32, ../../sass/partials/_media.scss */
+  .comment {
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  /* line 40, ../../sass/partials/_media.scss */
+  .col-1 {
+    width: 8.33333%;
+    float: left;
+  }
+
+  /* line 40, ../../sass/partials/_media.scss */
+  .col-2 {
+    width: 16.66667%;
+    float: left;
+  }
+
+  /* line 40, ../../sass/partials/_media.scss */
+  .col-3 {
+    width: 25%;
+    float: left;
+  }
+
+  /* line 40, ../../sass/partials/_media.scss */
+  .col-4 {
+    width: 33.33333%;
+    float: left;
+    padding: 20px;
+  }
+
+  /* line 40, ../../sass/partials/_media.scss */
+  .col-5 {
+    width: 41.66667%;
+    float: left;
+  }
+
+  /* line 40, ../../sass/partials/_media.scss */
+  .col-6 {
+    width: 50%;
+    float: left;
+  }
+
+  /* line 40, ../../sass/partials/_media.scss */
+  .col-7 {
+    width: 58.33333%;
+    float: left;
+  }
+
+  /* line 40, ../../sass/partials/_media.scss */
+  .col-8 {
+    width: 66.66667%;
+    float: left;
+  }
+
+  /* line 40, ../../sass/partials/_media.scss */
+  .col-9 {
+    width: 75%;
+    float: left;
+  }
+
+  /* line 40, ../../sass/partials/_media.scss */
+  .col-10 {
+    width: 83.33333%;
+    float: left;
+  }
+
+  /* line 40, ../../sass/partials/_media.scss */
+  .col-11 {
+    width: 91.66667%;
+    float: left;
+  }
+
+  /* line 40, ../../sass/partials/_media.scss */
+  .col-12 {
+    width: 100%;
+    float: left;
+  }
+
+  /* line 49, ../../sass/partials/_media.scss */
+  nav #hidden {
+    display: block;
+  }
+  /* line 52, ../../sass/partials/_media.scss */
+  nav .hamburger {
+    display: none;
+  }
+  /* line 55, ../../sass/partials/_media.scss */
+  nav a {
+    float: left;
+    padding: 20px 200px;
+  }
+
+  /* line 60, ../../sass/partials/_media.scss */
+  #phone {
+    height: 50%;
+    display: block;
+    float: none;
+  }
+
+  /* line 65, ../../sass/partials/_media.scss */
+  #me {
+    padding: 20px;
+    width: 30vw;
+    height: auto;
+    float: left;
+  }
+
+  /* line 70, ../../sass/partials/_media.scss */
+  aside {
+    height: 30vw;
+    margin: 0;
+    margin-top: 15px;
+  }
+
+  /* line 75, ../../sass/partials/_media.scss */
+  .small {
+    display: none;
+  }
+
+  /* line 78, ../../sass/partials/_media.scss */
+  .large {
+    width: 30vw;
+    height: 17vw;
+    display: block;
+    padding: 20px;
+  }
+
+  /* line 83, ../../sass/partials/_media.scss */
+  .login {
+    text-align: right;
+  }
+
+  /* line 86, ../../sass/partials/_media.scss */
+  .register {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* line 91, ../../sass/partials/_media.scss */
+  .comment {
+    margin-right: 60px;
+    margin-left: 60px;
+  }
+}

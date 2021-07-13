@@ -1,0 +1,28 @@
+nav {
+    background-color: $primary-nav-color;
+    a {
+        text-align: center;
+        display: block;
+        color: $second-font-color;
+        padding: 14px;
+        text-decoration: none;
+        &:hover {
+            background-color: $second-nav-color;
+            transform: scale(1.1);
+            margin-left: $standard-margin;
+        }
+    }
+    li {
+        font-size: $primary-font-size;
+        font-variant: small-caps;
+    }
+    & .active {
+        background-color: $third-nav-color;
+    }
+    & .hamburger {
+        display: none;
+    }
+    & #hidden {
+        display: block;
+    }
+}

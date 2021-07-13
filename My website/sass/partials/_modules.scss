@@ -1,0 +1,37 @@
+//menu
+nav {
+    background-color: $primary-nav-color;
+    overflow: hidden;
+    position: relative;
+    a {
+        text-align: center;
+        display: block;
+        color: $second-font-color;
+        padding: 14px;
+        text-decoration: none;
+        &:hover {
+            background-color: $second-nav-color;
+            transform: scale(1.1);
+            margin-left: $standard-margin;
+        }
+    }
+    & .active {
+        background-color: $third-nav-color;
+    }
+    & .hamburger {
+        @include color($primary-hamburger-color, $second-font-color);
+        cursor: pointer;
+        height: 100%;
+        width: 10%;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        &:hover {
+            @include color($second-hamburger-color, $primary-hamburger-color);
+        }
+    }
+    & #hidden {
+        display: none;
+    }
+}

@@ -1,0 +1,32 @@
+@mixin clearfix {
+    &::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin size($width, $height: $width) {
+    width: $width;
+    height: $height;
+}
+
+@mixin mq($canvas1, $canvas2:'UNKNOWN') {
+    @if map-has-key($breakpoints, $canvas1) {
+        @if map-has-key($breakpoints, $canvas2) {
+            @media only screen and (min-width: map-get($breakpoints, $canvas1)) and (max-width: map-get($breakpoints, $canvas2)) {
+                @content;
+            }
+        }
+        @else {
+            @media only screen and (min-width: map-get($breakpoints, $canvas1)) {
+                @content;
+            }
+        }
+    }
+}
+
+@mixin color($background, $foreground:$primary-font-color) {
+    background-color: $background;
+    color: $foreground;
+}

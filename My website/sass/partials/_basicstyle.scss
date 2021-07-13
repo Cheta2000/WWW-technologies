@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+}
+
+.row {
+    @include clearfix;
+}
+
+html {
+    font-family: $primary-font;
+    font-size: $primary-font-size;
+    background-color: $primary-background-color;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+h2 {
+    font-variant: small-caps;
+}
+
+header {
+    font-size: 150%;
+    padding: $standard-padding;
+    background-color: $primary-header-color;
+    text-align: center;
+}
+
+footer {
+    background-color: $primary-footer-color;
+    padding: 5px;
+}
+
+li {
+    font-size: $primary-font-size;
+    font-variant: small-caps;
+}
+
+img {
+    @include size(100%, auto);
+}
+
+#phone,
+.large {
+    display: none;
+}
+
+.login {
+    margin-top: -50px;
+    a {
+        color: $primary-font-color;
+        &:hover {
+            color: $second-font-color;
+        }
+    }
+}
+
+%center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#me {
+    @include size(70vw);
+    display: block;
+    @extend %center;
+}
+
+article {
+    margin: $standard-margin;
+    padding: 5px;
+    border: 2px solid black;
+    ;
+}
+
+.register {
+    margin: $standard-margin;
+}
+
+aside {
+    @extend article;
+    @include color($primary-aside-color, $second-font-color);
+    a {
+        color: $primary-font-color;
+    }
+}
+
+input {
+    &:invalid {
+        border: 2px dashed $error-color;
+    }
+}
+
+.visitors {
+    @extend article;
+    background: $visitors-color;
+}
+
+.error {
+    color: $error-color
+}
+
+td {
+    padding: 7px;
+}
+
+.comment {
+    border-color: $second-comments-color;
+    background-color: $primary-comments-color;
+    @extend %center;
+    width: 80vw;
+}
+
+.button {
+    box-shadow: 3px 4px 0px 0px #1564ad;
+    background: linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
+    background-color: #79bbff;
+    border-radius: 5px;
+    border: 1px solid #337bc4;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 12px 44px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #528ecc;
+    &:hover {
+        background: linear-gradient(to bottom, #378de5 5%, #79bbff 100%);
+        background-color: #378de5;
+    }
+    &:active {
+        position: relative;
+        top: 1px;
+    }
+}
+
+select {
+    width: 50vw;
+    font-size: large;
+}
+
+textarea {
+    @include size(50vw, 15vw);
+}
+
+h4 {
+    padding-left: $standard-padding;
+    font-size: 2em;
+    text-align: center;
+}
+
+#left,
+#right {
+    background-color: $comment-buttons-color;
+    @include size(300px, 50px);
+    border-radius: 100px;
+    color: $second-font-color;
+    font-size: 1em;
+}
+
+.buttons {
+    padding: $standard-padding;
+    text-align: center;
+}

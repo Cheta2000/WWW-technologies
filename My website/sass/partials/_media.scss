@@ -1,0 +1,95 @@
+@include mq(medium, large) {
+    @for $i from 1 through 12 {
+        .col-#{$i}s {
+            width: 100%/12*$i;
+            float: left;
+        }
+    }
+    #me {
+        padding-top: $standard-padding;
+        @include size(30vw, auto);
+    }
+    nav {
+        margin: $standard-margin;
+        & .hamburger {
+            display: none;
+        }
+        & #hidden {
+            display: block;
+        }
+        a {
+            text-align: left;
+            margin: 0px;
+            padding: $standard-padding;
+        }
+    }
+    .login {
+        text-align: right;
+    }
+    .up {
+        margin-top: -220px;
+    }
+    .comment {
+        margin-right: 40px;
+        margin-left: 40px;
+    }
+}
+
+@include mq(large) {
+    @for $i from 1 through 12 {
+        .col-#{$i} {
+            width: 100%/12*$i;
+            float: left;
+            @if $i==4 {
+                padding: $standard-padding;
+            }
+        }
+    }
+    nav {
+        #hidden {
+            display: block;
+        }
+        .hamburger {
+            display: none;
+        }
+        a {
+            float: left;
+            padding: $standard-padding 200px;
+        }
+    }
+    #phone {
+        height: 50%;
+        display: block;
+        float: none;
+    }
+    #me {
+        padding: $standard-padding;
+        @include size(30vw, auto);
+        float: left;
+    }
+    aside {
+        height: 30vw;
+        margin: 0;
+        margin-top: 15px;
+    }
+    .small {
+        display: none;
+    }
+    .large {
+        @include size(30vw, 17vw);
+        display: block;
+        padding: $standard-padding;
+    }
+    .login {
+        text-align: right;
+    }
+    .register {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .comment {
+        margin-right: 60px;
+        margin-left: 60px
+    }
+}
