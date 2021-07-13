@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Wzory</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        window.MathJax = {
+            tex: {
+                tags: 'ams',
+                inlineMath: [
+                    ['$', '$'],
+                    ['\\(', '\\)']
+                ]
+            }
+        };
+    </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Ciekawe wzory</h1>
+    </header>
+    <nav class="col-6s col-12">
+        <a href="index.html">O mnie</a>
+        <div id="hidden">
+            <a href="interests.html">Zainteresowania</a>
+            <a href="projects.html">Projekty</a>
+            <a class="active" href="mathjax.html">Wzory</a>
+        </div>
+        <button class="hamburger" id="hamburger">
+            <i class="fa fa-bars"></i>
+        </button>
+    </nav>
+    <section class="row">
+        <article class="col-11s col-11 math">
+            <h2>interpolacja lagrange’a wielomianu f nad Zp</h2>
+            <p>Mając dane t różnych punktów $ (x_{i},y_{i}) $ nieznanego wielomianu f stopnia mniejszego od t możemy policzyć jego współczynniki korzystając ze wzoru:</p>
+            <p>$$f(x)=\sum_{i=1}^{t}\left(y_{i}\prod_{1\leqslant j\leqslant t,\ j\neq i} \frac{x-x_{j}}{x_{i}-x_{j}}\right) \mod p$$</p>
+        </article>
+        <article class="col-11s col-11 math">
+            <h2>Wzory trygonometryczne</h2>
+            <p>$\begin{eqnarray} \sin^{2}\alpha + \cos^{2}\alpha=1 \label{1tr}\\ \tan\beta=\frac{\sin\beta}{\cos\beta}\nonumber\\ \sin\alpha+\sin\gamma=2\sin\frac{\alpha+\beta}{2}\cos\frac{\alpha-\beta}{2}\label{2tr}\\ \cos(\pi+\alpha)=-\cos\alpha \label{3tr}
+                \end{eqnarray}$
+            </p>
+            <p>
+                Wzór $(\ref{1tr})$ znany jest jako jedynka trygonometryczna.
+            </p>
+            <p>
+                Wzór $(\ref{2tr})$ znany jest jako jedynka suma sinusów.
+            </p>
+            <p>
+                Wzór $(\ref{3tr})$ znany jest jako redukcja cosinusa.
+            </p>
+        </article>
+        <article class="col-11s col-11 math">
+            <h2>Funkcja</h2>
+            <p>
+                $$f(x) = \left\{ \begin{array}{ll} \binom{x}{3} & \textrm{ dla } x \leqslant -4\\ \ln{x} & \textrm{ dla } x \in (-4, 0)\cup(1,4]\\ \int_{0}^{5}\frac{\cos x}{2} & \textrm{ dla } x \in [0,1]\\ \lim_{n\to\infty}\left(1+(\lceil\frac{x}{2}\rceil)^{n}\right)
+                & \textrm{ dla } x \in [1,\infty] \setminus (1,4] \end{array} \right.$$
+            </p>
+        </article>
+        <article class="col-11s col-11">
+            <iframe width="100%" height="300" src="http://localhost:40405/"></iframe>
+        </article>
+    </section>
+    <footer>
+        <p><b>Strona powstała jako zadanie na kurs Nowoczesnych Technologii WWW</b></p>
+    </footer>
+    <script src="menu.js " type="text/javascript "></script>
+    <noscript>
+        <link rel="stylesheet " href="styleNoJS.css " />
+    </noscript>
+</body>
+
+</html>
